@@ -1,0 +1,51 @@
+/* ==========================================================================
+   高清头像增强 · Sharp Avatars — 样式
+   ========================================================================== */
+
+/* 轻度锐化开关：仅微调对比度与饱和度，不做破坏性滤镜，不影响表情立绘 */
+body.sharp-sharpen-on .mes .avatar img,
+body.sharp-sharpen-on .character_select .avatar img,
+body.sharp-sharpen-on #avatar_load_preview,
+body.sharp-sharpen-on #user_avatar_block .avatar img,
+body.sharp-sharpen-on .zoomed_avatar img,
+body.sharp-sharpen-on #persona_block .avatar img,
+body.sharp-sharpen-on .avatar-container .avatar img {
+    filter: contrast(1.04) saturate(1.035);
+}
+
+/* 显式声明高质量缩放渲染，覆盖个别主题的降级设置 */
+img[src*="/characters/"],
+img[src*="/User%20Avatars/"],
+img[src*="/backgrounds/"] {
+    image-rendering: auto;
+}
+
+/* ------------------------------ 设置面板 ------------------------------ */
+
+.sharp-avatars-settings .sharp-version {
+    margin-left: 6px;
+    font-size: 0.75em;
+    font-weight: normal;
+    color: var(--muted-text-color, #888);
+}
+
+.sharp-avatars-settings .checkbox {
+    margin: 8px 0;
+    align-items: center;
+}
+
+.sharp-avatars-settings .checkbox span {
+    line-height: 1.4;
+}
+
+.sharp-refresh-btn {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.sharp-hint {
+    margin-top: 10px;
+    font-size: 0.82em;
+    line-height: 1.55;
+    color: var(--muted-text-color, #999);
+}

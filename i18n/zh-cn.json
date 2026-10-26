@@ -1,0 +1,10 @@
+{
+    "sharpAvatarsTitle": "高清头像增强 · Sharp Avatars",
+    "enabledLabel": "原图直出：角色头像绕过低清缩略图（总开关）",
+    "personaLabel": "同时替换用户（persona）头像",
+    "bgLabel": "同时替换背景图缩略图（默认关闭，避免大图耗流量）",
+    "sharpenLabel": "轻度锐化：对比度 / 饱和度微调（可选）",
+    "debugLabel": "调试日志（输出到浏览器控制台）",
+    "refreshButton": "立即刷新头像",
+    "hint": "本扩展只在浏览器端生效：把头像从 96×144 低清缩略图换成原图。若上传时图片已被压缩、或头像依旧模糊，请按 README 附录修改服务端 config.yaml 并清理缩略图缓存。"
+}

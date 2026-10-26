@@ -1,0 +1,35 @@
+<div class="sharp-avatars-settings inline-drawer">
+    <div class="inline-drawer-toggle inline-drawer-header">
+        <b>
+            <span data-i18n="sharpAvatarsTitle">高清头像增强 · Sharp Avatars</span>
+            <span class="sharp-version">v1.0.0</span>
+        </b>
+        <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+    </div>
+    <div class="inline-drawer-content">
+        <label class="checkbox flex-container flexGap5">
+            <input type="checkbox" id="sharp_enabled" {{#if enabled}}checked{{/if}}>
+            <span data-i18n="enabledLabel">原图直出：角色头像绕过低清缩略图（总开关）</span>
+        </label>
+        <label class="checkbox flex-container flexGap5">
+            <input type="checkbox" id="sharp_persona" {{#if replacePersona}}checked{{/if}}>
+            <span data-i18n="personaLabel">同时替换用户（persona）头像</span>
+        </label>
+        <label class="checkbox flex-container flexGap5">
+            <input type="checkbox" id="sharp_bg" {{#if replaceBackground}}checked{{/if}}>
+            <span data-i18n="bgLabel">同时替换背景图缩略图（默认关闭，避免大图耗流量）</span>
+        </label>
+        <label class="checkbox flex-container flexGap5">
+            <input type="checkbox" id="sharp_sharpen" {{#if sharpen}}checked{{/if}}>
+            <span data-i18n="sharpenLabel">轻度锐化：对比度 / 饱和度微调（可选）</span>
+        </label>
+        <label class="checkbox flex-container flexGap5">
+            <input type="checkbox" id="sharp_debug" {{#if debug}}checked{{/if}}>
+            <span data-i18n="debugLabel">调试日志（输出到浏览器控制台）</span>
+        </label>
+        <button id="sharp_refresh" class="menu_button sharp-refresh-btn" data-i18n="refreshButton">立即刷新头像</button>
+        <div class="sharp-hint" data-i18n="hint">
+            本扩展只在浏览器端生效：把头像从 96×144 低清缩略图换成原图。若上传时图片已被压缩、或头像依旧模糊，请按 README 附录修改服务端 config.yaml 并清理缩略图缓存。
+        </div>
+    </div>
+</div>

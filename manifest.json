@@ -1,0 +1,22 @@
+{
+    "display_name": "高清头像增强 · Sharp Avatars",
+    "loading_order": 50,
+    "requires": [],
+    "optional": [],
+    "dependencies": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "Doubao",
+    "version": "1.0.0",
+    "homePage": "https://github.com/yg0108011/sharp-avatars",
+    "auto_update": false,
+    "minimum_client_version": "1.12.0",
+    "i18n": {
+        "zh-cn": "i18n/zh-cn.json",
+        "en": "i18n/en.json"
+    },
+    "hooks": {
+        "enable": "onEnable",
+        "disable": "onDisable"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "sharpAvatarsTitle": "Sharp Avatars",
+    "enabledLabel": "Serve originals for character avatars (master switch)",
+    "personaLabel": "Also replace user (persona) avatars",
+    "bgLabel": "Also replace background thumbnails (off by default to save bandwidth)",
+    "sharpenLabel": "Light sharpening: slight contrast / saturation boost (optional)",
+    "debugLabel": "Debug logging (browser console)",
+    "refreshButton": "Refresh avatars now",
+    "hint": "This extension works in the browser only: it swaps 96×144 thumbnails for originals. If avatars are still blurry because the upload itself was compressed, follow the server-side config.yaml guide in the README."
+}
