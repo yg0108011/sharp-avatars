@@ -9,7 +9,7 @@
     "author": "Doubao",
     "version": "1.0.0",
     "homePage": "https://github.com/yg0108011/sharp-avatars",
-    "auto_update": false,
+    "auto_update": true,
     "minimum_client_version": "1.12.0",
     "i18n": {
         "zh-cn": "i18n/zh-cn.json",
